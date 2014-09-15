@@ -8,11 +8,6 @@ body {
 nav {
 	box-sizing: border-box;
 	background: #c8b24a;
-	width: 147px;
-	padding: 10px;
-	min-height: 540px;
-	height: 100%;
-	float: left;
 }
 
 header {
@@ -20,38 +15,34 @@ header {
 }
 p {
 	color: #888;
-	font-size: 1.8em;
-	line-height: 1.8em;
+	font-size: 1.6em;
+	line-height: 1.6em;
 }
 nav a {
-	font-size: 22px;
-	display: block;
-	width: 100%;
+	font-size: 2.2em;
 	text-decoration: none;
-	margin-bottom: 25px;
 	-webkit-transform:scale(1,1.15);
 	color: #645925;
 }
+
 a {
 
 }
 section {
 	margin-top: 2em;
-	border:1px solid blue;
-	float: left;
-	width: 800px;
 }
 
 footer {
 	font-size: 9px;
-	margin-top: 4em;
 	color: #c8b24a;
 	text-transform: uppercase;
-	position: absolute;
-	margin-top: 502px;
-	margin-left: 400px;
-	-webkit-transform: rotate(2deg);
+	display: none;
 }
+
+.page-home footer {
+	display: block;
+}
+
 footer .loic {
 	color: #c8b24a;
 	display: inline-block;
@@ -64,30 +55,138 @@ footer .loic {
 	box-sizing: border-box;
 	background: url(/william-wray.jpg);
 	background-repeat: no-repeat;
-	background-size: 813px;
-	background-position: top right;
-	min-height: 540px;
+}
+
+.page-content {
+	background: black;
+	box-sizing: border-box;
+	color: #a29b99;
+}
+
+.logo {
+	background: url(/gamma-wray.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .home-logo {
 	position: absolute;
-	background: url(/gamma-wray.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 960px;
-	height: 600px;
-	margin-left: -148px;
-	pointer-events:none;
-	
+	pointer-events:none;	
 }
-@media (min-width: 450px) {
+
+@media (min-width: 960px) {
 	.wrapper {
 		width: 960px;
 		margin: 0 auto;
 	}
+	nav {
+		float: left;
+		width: 147px;
+		padding: 10px;
+		min-height: 540px;
+		height: 100%;
+	}
+	nav a {
+		display: block;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	nav a.teaser {
+		margin-top: 20px;
+	}
+	nav a.story {
+		margin-top: 100px;
+	}
+	.wrapper {
+		background-size: 813px;
+		background-position: top right;
+		min-height: 540px;
+	}
+	
+	.home-logo {
+		width: 960px;
+		height: 600px;
+		margin-left: -148px;
+	}
+	
+	footer {
+		margin-top: 4em;
+		position: absolute;
+		margin-top: 502px;
+		margin-left: 400px;
+		-webkit-transform: rotate(2deg);
+	}
+	section {
+		float: left;
+		width: 80em;
+	}
+	.page-logo {
+		width: 650px;
+		height: 380px;
+		margin-top: -120px;
+	}
+	.page-content {
+		width: 490px;
+		margin-left: 140px;
+		padding: 1em;
+	}
 }
-@media (max-width: 449px) {
+@media (max-width: 959px) {
 	.wrapper {
 		width: 100%;
+	}
+	nav {
+		width: 100%;
+		padding: 10px;
+		height: 4.3em;
+		
+		text-align: justify;
+		-ms-text-justify: distribute-all-lines;
+		text-justify: distribute-all-lines;
+	}
+	nav a {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	
+	.stretch {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+	}
+	
+	.wrapper {
+		background-size: 100%;
+		background-position: top center;
+		min-height: 540px;
+	}
+	
+	.home-logo {
+		width: 100%;
+		height: 600px;
+		margin-left: -10%;
+	}
+	
+	.page-logo {
+		width: 80%;
+		height: 50vw;
+		margin-top: -20%;
+	}
+	
+	footer {
+		text-align: center;
+		margin-top: 70%;
+	}
+	
+	.page-content {
+		padding: 2em;
+	}
+	
+}
+
+@media (max-width: 400px) {
+	body {
+		font-size: 8px;
 	}
 }

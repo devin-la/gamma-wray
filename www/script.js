@@ -29,23 +29,10 @@ angular.module('GammaWray', ['ngRoute'])
 		$locationProvider.html5Mode(true);
 	})
 
-	.run(function($rootScope, $location) {
-
-		$rootScope.back = function() {
-			$location.path('/');	
-		};
-		
-		$rootScope.safeApply = function(fn) {
-			var phase = this.$root.$$phase;
-			if (phase == '$apply' || phase == '$digest') {
-				if (fn && (typeof(fn) === 'function')) {
-					fn($rootScope);
-				}
-			} else {
-				this.$apply(fn);
-			}
-		};
-
+	.run(function($rootScope, $location, $route) {
+		$rootScope.$on('$routeChangeSuccess', function ($currentRoute, $previousRoute) {
+			$rootScope.page = 'page-' + $route.current.action;
+		});
 	});
 
 window.addEventListener('load', function() {
