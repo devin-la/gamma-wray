@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="GammaWray">
+	<head>
+		<title>GAMMA WRAY</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="shortcut icon" href="/icon.png">
+		<link rel="apple-touch-icon" href="/icon.png" />
+		<link rel="stylesheet" type="text/css" href="/style.css">
+		<base href="/">
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav>
+				<br><br>
+				<a href="/teaser">teaser</a>
+				<a href="/trailer">trailer</a>
+				<a href="/film">film</a>
+				<br><br><br><br><br><br><br><br><br><br>
+				<a href="/story">story</a>
+			</nav>
+
+			<header>
+				<h1>gamma wray</h1>
+				<h2>The painter's journey of William Wray</h2>
+			</header>
+
+		    <section ng-view>
+		    </section>
+			<footer>a film by <a href="http://loiczimmermann.com/" target="_blank"class="loic">loic zimmermann</span></footer>
+		</div>
+	</body>
+	
+	<script type="text/ng-template" id="home.html">
+		<div class="home-logo"></div>
+	</script>
+	
+	<script type="text/ng-template" id="teaser.html">
+		<p>Welcome to my awesome website!</p>
+	</script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular-route.js"></script>
+	
+	<script src="//use.typekit.net/zhd3htr.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	
+	<script src="/fastclick.js"></script>
+	<script src="/script.js"></script>
+
+</html>
