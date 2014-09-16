@@ -2,7 +2,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body {
 	font-size: 10px;
-	font-family: "Orator Std", "Orator", Georgia, Times, "Times New Roman", serif;
+	font-family: "orator-std", "Orator Std", "Orator", sans-serif;
 	background: black;
 }
 nav {
