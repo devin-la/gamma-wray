@@ -146,7 +146,6 @@ footer .loic {
 	}
 	nav a {
 		display: inline-block;
-		margin-right: 20px;
 	}
 	
 	.stretch {
@@ -188,5 +187,8 @@ footer .loic {
 @media (max-width: 400px) {
 	body {
 		font-size: 8px;
+	}
+	nav a {
+		font-size: 1.9em;
 	}
 }
