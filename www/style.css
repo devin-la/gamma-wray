@@ -184,11 +184,25 @@ footer .loic {
 	
 }
 
+
+.video .vid {
+	width: 100%;
+	height: 34vw;
+	box-sizing: border-box;
+}
+.video {
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+}
+
 @media (max-width: 400px) {
 	body {
 		font-size: 8px;
 	}
 	nav a {
 		font-size: 1.9em;
+	}
+	.video .vid {
+		height: 300px;
 	}
 }
