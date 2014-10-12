@@ -36,7 +36,7 @@ footer {
 	font-size: 9px;
 	color: #c8b24a;
 	text-transform: uppercase;
-	display: none;
+
 }
 
 .page-home footer {
@@ -84,6 +84,10 @@ footer .loic {
 .video {
 	margin: 0 auto;
 	padding: 0 20px 0 20px;
+}
+
+.story-content a {
+	color: #d1b33f;
 }
 
 @media (min-width: 960px) {
@@ -143,9 +147,10 @@ footer .loic {
 		padding: 1em;
 	}
 	.story-content {
-		height: 26em;
+		height: 24em;
 		overflow-y: scroll;
 		-webkit-overflow-scrolling: touch;
+		margin-top: -5em;
 	}
 	.video {
 		padding-left: 29px;
